@@ -20,7 +20,7 @@ A complete, from-scratch computation of completeness, reliability and occurrence
 
 These steps have the following dependencies:
 
-1) is required by 2) which is required by 3) which is required by 7)
-1) is required by 4) which is required by 6) which is required by 7)
-1) is required by 5) which is required by 6) which is required by 7)
+- 1 is required by 2 which is required by 3 which is required by 7
+- 1 is required by 4 which is required by 6 which is required by 7
+- 1 is required by 5 which is required by 6 which is required by 7
 
