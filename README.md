@@ -1,10 +1,26 @@
-# DR25-occurrence
-Python notebooks that explain the computation of various DR25 occurrence rate products
+# DR25-occurrence-tutorial
 
-If you're not used to Bayesian modeling, start with lineFitting.ipynb, which introduces the concepts in the context of fitting a line to data.  Then work through binomialPointProcessConstantRate.ipynb and binomialPointProcessVariableRate.ipynb, which apply these techniques to a binomial point process in 2D as a warmup to DR25 vetting completeness and reliability analysis.  As checked in, binomialPointProcessVariableRate.ipynb detects a barely-resolved signal of reduced probability in the lower right corner.  You can try other models which have more obvious signals if you run the notebook.
+This repostory contains the files needed to run a tutorial on using DR25 completeness products for occurrence rates, described in the paper "A Probabilistic Approach to Kepler Completeness and Reliability for Exoplanet Occurrence Rates".
 
-The Bayesian approach using a binomial point process is applied to DR25 analysis in the relatively simple case of binomialVettingCompleteness.ipynb.  DR25 reliability is addressed in binomialReliability.ipynb.
+A complete, from-scratch computation of completeness, reliability and occurrence rates takes the following steps.  These steps have already been executed in the repository, so input and output files of all steps are availalble (though you have to decompress the .zip files in stellarCatalogs).  Therefore any of the steps below can be run out of order, which will use the inputs computed by the previous steps.
 
-There are also examples using a Poisson point process, but I concluded that this is not suitable for DR25 vetting and reliability analysis.
+1) Select the parent stellar population by running createStellarCatalogs.ipynb, which creates various catalogs in stellarCatalogs/
 
-For a description of DR25 and the data behind this analysis, see https://arxiv.org/pdf/1710.06758.pdf.
+2) Compute vetting completeness by running GKbaseline/binomialVettingCompleteness.ipynb
+
+3) Compute the detection and completeness contours by following the README in completenessContours/ (you probably really don't want to do this: it requires > 0.5 TB of downloaded files and takes several hours - just use the precomputed result already there)
+
+4) Compute false positive effectiveness by running GKbaseline/binomialFPEffectiveness.ipynb
+
+5) Compute the observed false positive rate by running GKbaseline/binomialObsFPRate.ipynb
+
+6) Assemble the planet population and compute the reliability for each planet by running GKbaseline/makePlanetInput.ipynb
+
+7) Compute the occurrence rate by running GKbaseline/computeOccurrence.ipynb
+
+These steps have the following dependencies:
+
+1) is required by 2) which is required by 3) which is required by 7)
+1) is required by 4) which is required by 6) which is required by 7)
+1) is required by 5) which is required by 6) which is required by 7)
+
