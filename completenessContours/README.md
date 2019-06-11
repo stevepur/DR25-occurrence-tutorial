@@ -3,8 +3,8 @@
 These files support the creation of DR25 completeness contours.  They are a modified version of the code in https://github.com/nasa/KeplerPORTs.
 
 Slides briefly describing this tutorial are found at 
-https://tinyurl.com/DR25TutorialIntro
-https://tinyurl.com/DR25TutorialCompute
+- https://tinyurl.com/DR25TutorialIntro
+- https://tinyurl.com/DR25TutorialCompute
 
 The paper giving the details of the methods described by this tutorial is 
 Bryson et al. “A Probabilistic Approach to Kepler Completeness and Reliability for Exoplanet Occurrence Rates” arXiv:1906.03575
