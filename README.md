@@ -1,6 +1,10 @@
 # DR25-occurrence-tutorial
 
-This repostory contains the files needed to run a tutorial on using DR25 completeness products for occurrence rates, described in the paper "A Probabilistic Approach to Kepler Completeness and Reliability for Exoplanet Occurrence Rates".
+This repostory contains the files needed to run a tutorial on using DR25 completeness products for occurrence rates, described in the paper "A Probabilistic Approach to Kepler Completeness and Reliability for Exoplanet Occurrence Rates" arXiv:1906.03575.
+
+Slides briefly describing this tutorial are found at 
+- https://tinyurl.com/DR25TutorialIntro
+- https://tinyurl.com/DR25TutorialCompute
 
 A complete, from-scratch computation of completeness, reliability and occurrence rates takes the following steps.  These steps have already been executed in the repository, so input and output files of all steps are availalble (though you have to decompress the .zip files in stellarCatalogs).  Therefore any of the steps below can be run out of order, which will use the inputs computed by the previous steps.
 
