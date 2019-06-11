@@ -2,6 +2,13 @@
 
 These files support the creation of DR25 completeness contours.  They are a modified version of the code in https://github.com/nasa/KeplerPORTs.
 
+Slides briefly describing this tutorial are found at 
+https://tinyurl.com/DR25TutorialIntro
+https://tinyurl.com/DR25TutorialCompute
+
+The paper giving the details of the methods described by this tutorial is 
+Bryson et al. “A Probabilistic Approach to Kepler Completeness and Reliability for Exoplanet Occurrence Rates” arXiv:1906.03575
+
 If you downloaded this directory from https://github.com/stevepur/DR25-occurrence-tutorial then the completeness contour created by running the steps below "out_sc0_GK_baseline.fits.gz" is already included.  You do not need to run software in this directory to run this tutorial.
 
 To use this code, you need the complete set of Window Function and One-sigma Depth Functions from https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html.  This is 397,418 files taking 588.29 GB of storage, downloaded with a wget script.  We assume this data is stored in completenessFiles/ below.
