@@ -13,7 +13,7 @@ A complete, from-scratch computation of completeness, reliability and occurrence
 
 2) Compute vetting completeness by running GKbaseline/binomialVettingCompleteness.ipynb
 
-3) Compute the detection and completeness contours by following the README in completenessContours/ (you probably really don't want to do this: it requires > 0.5 TB of downloaded files and takes several hours - just use the precomputed result already there)
+3) Compute the detection and completeness contours by following the README in completenessContours/ (you probably really don't want to do this: it requires > 0.5 TB of downloaded files and takes several hours - just use the precomputed result already in completenessContours/ in later steps)
 
 4) Compute false positive effectiveness by running GKbaseline/binomialFPEffectiveness.ipynb
 
