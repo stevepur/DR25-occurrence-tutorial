@@ -9,6 +9,8 @@ Slides briefly describing this tutorial are found at
 
 A complete, from-scratch computation of completeness, reliability and occurrence rates takes the following steps.  These steps have already been executed in the repository, so input and output files of all steps are availalble (though you have to decompress the .zip files in stellarCatalogs).  Therefore any of the steps below can be run out of order, which will use the inputs computed by the previous steps.
 
+Running these tutorials requires a good Python scientific computing environment - we recommend Anaconda - and the corner and emcee packages.
+
 1) Select the parent stellar population by running createStellarCatalogs.ipynb, which creates various catalogs in stellarCatalogs/
 
 2) Compute vetting completeness by running GKbaseline/binomialVettingCompleteness.ipynb
